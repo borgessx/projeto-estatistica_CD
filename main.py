@@ -9,7 +9,13 @@ def calcular_mediana () :
     pass
 def calcular_variancia () :
     pass
-def obter_extremos () :
-    pass
+def obter_extremos (dados) :
+
+    extremo_maior = max(dados)
+    extremo_menor = min(dados)
+    extremos = [extremo_maior, extremo_menor]
+    return extremos
+
 dados = limpar_dados ( dados_sujos )
 print ( f" Dados processados : { dados }")
+print(f"Verificado por Vítor Domingos")
