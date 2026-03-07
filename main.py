@@ -15,3 +15,4 @@ def obter_extremos ():
     pass
 dados = limpar_dados ( dados_sujos )
 print ( f" Dados processados : { dados }")
+print('Verificado por Tayllor Beatriz Queiroz Costa')
