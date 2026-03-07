@@ -21,8 +21,19 @@ def calcular_mediana(list):
         mediana = list[pos3]
     return mediana
   
-def calcular_variancia():
-    pass
+def calcular_variancia(numero):
+    soma =0
+
+    n = len(numero)
+    media = sum(numero) / n
+
+    for i in numero:
+        difer = i - media
+        quad = difer ** 2
+        soma += quad
+
+    variancia = soma / n
+    return variancia
   
 def obter_extremos (dados) :
     extremo_maior = max(dados)
