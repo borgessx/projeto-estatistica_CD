@@ -7,8 +7,19 @@ def limpar_dados(dados):
         return dados
 def calcular_media():
     pass
-def calcular_mediana():
-    pass
+
+def calcular_mediana(list):
+    valor = (len(list)%2)
+    list.sort()
+    if valor == 0:
+        pos1 = int(((len(list)/2)-1))
+        pos2 = int((pos1 + 1))
+        mediana = (list[pos1]+list[pos2])/2
+    else:
+        pos3 = int(((len(list)+1)/2)-1)
+        mediana = list[pos3]
+    return mediana
+
 def calcular_variancia():
     pass
 def obter_extremos ():
