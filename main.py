@@ -5,8 +5,9 @@ def limpar_dados(dados):
             if (type(item) is str) or item == None:
                 dados.remove(item)
         return dados
-def calcular_media():
-    pass
+      
+def calcular_media (dados) :
+    return sum(dados) / len(dados)
 
 def calcular_mediana(list):
     valor = (len(list)%2)
@@ -19,13 +20,24 @@ def calcular_mediana(list):
         pos3 = int(((len(list)+1)/2)-1)
         mediana = list[pos3]
     return mediana
-
+  
 def calcular_variancia():
     pass
-def obter_extremos ():
-    pass
+  
+def obter_extremos (dados) :
+    extremo_maior = max(dados)
+    extremo_menor = min(dados)
+    extremos = [extremo_maior, extremo_menor]
+    return extremos
+
 dados = limpar_dados ( dados_sujos )
 print ( f" Dados processados : { dados }")
 
 
+
 print("Verificado por: Luís Thiago Nogueira Coelho")
+print(f"Verificado por Tayllor Beatriz Queiroz Costa")
+print(f"verificado por nicolas")
+print(f"Verificado por Vítor Domingos")
+
+
