@@ -7,23 +7,26 @@ def limpar_dados(dados):
         return dados
 def calcular_media():
     pass
-def calcular_mediana():
+
+def calcular_media (dados) :
+    return sum(dados) / len(dados)
+  
+def calcular_mediana () :
     pass
-def calcular_variancia(numero):
-    soma =0
 
-    n = len(numero)
-    media = sum(numero) / n
-
-    for i in numero:
-        difer = i - media
-        quad = difer ** 2
-        soma += quad
-
-    variancia = soma / n
-    return variancia
-
-def obter_extremos ():
+def calcular_variancia () :
     pass
+def obter_extremos (dados) :
+
+    extremo_maior = max(dados)
+    extremo_menor = min(dados)
+    extremos = [extremo_maior, extremo_menor]
+    return extremos
+
 dados = limpar_dados ( dados_sujos )
 print ( f" Dados processados : { dados }")
+
+print(f"Verificado por Tayllor Beatriz Queiroz Costa")
+print(f"verificado por nicolas")
+print(f"Verificado por Vítor Domingos")
+
